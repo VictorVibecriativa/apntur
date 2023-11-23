@@ -1,0 +1,495 @@
+/* Victor Ap&NTurismo */
+.mt_8 {
+    margin-top: 6rem;
+}
+
+.mt_3 {
+    margin-top: 3rem;
+}
+
+.txt_shadow {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.wd_fix {
+    width: 326px;
+}
+
+.tltWid {
+    width: 500px;
+}
+
+@media (max-width: 992px) {
+    .tltWid {
+        width: 294px;
+    }
+
+    .wd_fix {
+        width: 278px;
+    }
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 15rem !important;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* Victor Ap&NTurismo */
+
+
+
+
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.tlt_slid-1 {
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 65px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.subTlt {
+    font-size: 29px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.iconseta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #ffffff80;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    z-index: 0;
+}
+
+.slidervt {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mt7Rem {
+    margin-top: 7rem;
+}
+
+.section_home {
+    color: #009DFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    display: block;
+}
+
+.tlt-sobre_home {
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 56px;
+    font-family: 'Raleway', sans-serif;
+    color: #1F1F1F;
+}
+
+.subtlt-sobre_home {
+    padding-top: 1rem;
+    font-size: 16px;
+    line-height: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 44px;
+    font-family: 'Raleway', sans-serif;
+    color: #817f7f;
+}
+
+.lineButon {
+    color: #919191;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #919191;
+}
+
+.lineButon:hover {
+    color: #007bff;
+    border-bottom: 1px solid #007bff;
+}
+
+.imgSobre_home {
+    position: relative;
+    overflow: hidden;
+}
+
+.imgSobre_home img {
+    transition: transform 0.3s;
+}
+
+.imgSobre_home:hover img {
+    transform: scale(1.1);
+}
+
+.tlt_content_home {
+    font-size: 22px;
+    font-weight: 400;
+    color: #1F1F1F;
+    margin-top: 32px;
+}
+
+.subt_content_home {
+    font-size: 16px;
+    color: #616060;
+    line-height: 28px;
+    position: relative;
+    z-index: 9;
+    margin-left: 23px;
+    list-style: disc;
+}
+
+.bnt_verMais {
+    display: inline-block;
+    font-size: 14px;
+    color: #009DFF;
+    border: 1px solid #009DFF;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    width: 100%;
+    margin-top: 1.5rem;
+    transition: all 0.5s;
+}
+
+.bnt_verMais:hover {
+    background: #009DFF;
+    color: #fff;
+}
+
+.bgImg_video {
+    position: relative;
+    /* Tornar o posicionamento relativo para o elemento pseudo */
+    background-image: url(../../public/home/video.png.webp);
+    background-size: cover;
+    background-position: center center;
+    padding: 250px 0;
+}
+
+/* Adicione o elemento pseudo ::before para escurecer o background */
+.bgImg_video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.txtCenter {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.span_video {
+    font-size: 14px;
+    color: #fff;
+}
+
+.tlt_video {
+    font-size: 46px;
+    color: #fff;
+    line-height: 56px;
+    font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 28px;
+}
+
+.playVideo {
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    line-height: 60px;
+    font-size: 15px;
+    color: #009DFF;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.box_contentQuarto {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    padding: 60px 60px 47px 60px;
+}
+
+/* çç */
+.imgQuarto_home {
+    width: 673px;
+}
+
+.txtQuarto_home {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    padding: 60px 60px 47px 60px;
+}
+
+.spantxtQuarto_home {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 9px;
+    display: block;
+    position: relative;
+    z-index: 8;
+}
+
+.tlttxtQuarto_home {
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    z-index: 8;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.buttonBook {
+    color: white !important;
+    font-weight: 500;
+    margin-top: -48px;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.abrgButtn:hover .buttonBook {
+    opacity: 1 !important;
+    z-index: 20 !important;
+}
+
+.tltContact_home {
+    font-size: 30px;
+    color: #1F1F1F;
+    font-weight: 400;
+}
+
+.boxContact_home {
+    padding: 3rem;
+    border: 1px solid #BABABA;
+}
+
+.bntContact_home {
+    background: #009DFF;
+    color: #fff;
+    padding: 12px 53px;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 18px;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+}
+
+.bntContact_home:hover {
+    color: #009DFF;
+    border: 1px solid #009DFF;
+    background: #fff;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+.image-wrapper {
+    flex: left;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+    cursor: pointer;
+
+}
+
+.image-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    transition: left 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.image-wrapper:hover::after {
+    left: 0;
+    transition: left 0.8s;
+    opacity: 1;
+}
+
+.imgInsta_home {
+    width: 20%;
+}
+
+.instahome {
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.image-wrapper:hover i.instahome {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .image-container:where(.astro-J7PV25F6) {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .buttonBook {
+        padding-top: 60px;
+    }
+
+    .image-container {
+        flex-wrap: wrap;
+    }
+
+    .slidervt {
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .tlt_slid-1 {
+        color: #ffffff;
+        font-family: "Raleway", sans-serif;
+        font-size: 30px;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+
+    .carousel-caption {
+        bottom: 15.25rem !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: none;
+    }
+
+    .menuItem {
+        color: #fff !important;
+    }
+
+    .GridMob {
+        display: grid;
+    }
+
+    .mt4remMOb {
+        margin-top: 4rem;
+    }
+
+    .wrapMob {
+        flex-wrap: wrap;
+    }
+
+    .mobgrid {
+        display: grid !important;
+    }
+
+    .txtCenterMob {
+        text-align: center;
+    }
+
+    .mtMob1Rem {
+        margin-top: 1rem;
+    }
+
+    .imgInsta_home {
+        width: 100%;
+    }
+
+    .tlt-sobre_home {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}

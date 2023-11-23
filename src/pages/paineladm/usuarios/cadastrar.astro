@@ -1,0 +1,167 @@
+---
+import HTML from "../../../pages/paineladm/_base.astro";
+---
+
+<HTML title="Início" description="">
+    <div class="container p-4">
+        <div>
+            <header class="container headerAdm">
+                <h4><i class=" fa-solid fa-user pr-2"></i>Cadastrar usuario</h4>
+            </header>
+        </div>
+
+        <form class="formCaix" id="form" autocomplete="off">
+            <div class="p-3">
+                <div class="form-group">
+                    <label for="nome" class="fontFormTl">Nome</label>
+                    <input
+                        name="nome"
+                        type="text"
+                        class="form-control"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="email" class="fontFormTl">Email</label>
+                    <input
+                        name="email"
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Digite seu email"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="cpf" class="fontFormTl">CPF</label>
+                    <input
+                        name="cpf"
+                        type="text"
+                        class="form-control"
+                        id="cpf"
+                        placeholder="Digite seu CPF"
+                        maxlength="11"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="password" class="fontFormTl">Senha</label>
+                    <input
+                        class="form-control"
+                        type="password"
+                        id="password"
+                        name="password"
+                        minlength="8"
+                        placeholder="Digite sua senha"
+                    />
+                </div>
+                <div id="selectAcesso" class="form-group">
+                    <label for="acesso" class="fontFormTl">Tipo de acesso</label
+                    >
+                    <select
+                        onchange="selectAcesso()"
+                        name="acesso"
+                        class="form-control"
+                        id="acesso"
+                    >
+                        <option value="">Selecionar o tipo de acesso</option>
+                        <option id="" value="">Acesso 1</option>
+                        <option id="" value="">Acesso 2</option>
+                        <option id="" value="">Acesso 3</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="cadastrar"
+                    >Cadastrar</button
+                >
+            </div>
+        </form>
+    </div>
+
+    <script
+        src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js"
+        type="text/javascript"></script>
+    <!-- Bootstrap Switch -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/js/bootstrap-switch.min.js"
+    ></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"
+    ></script>
+    <script
+        src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"
+    ></script>
+    <script>
+        $("#form").validate({
+            rules: {
+                nome: {
+                    required: true,
+                },
+                email: {
+                    required: true,
+                },
+                cpf: {
+                    required: true,
+                },
+                password: {
+                    required: true,
+                },
+                acesso: {
+                    required: true,
+                },
+            },
+            messages: {},
+            submitHandler: function (form) {
+                $("#cadastrar")
+                    .attr("disabled", true)
+                    .html(
+                        '<i class="fa fa-spinner fa-pulse fa-fw"></i> Aguarde um momento...'
+                    );
+
+                var dados = {
+                    use_name: $("#nome").val(),
+                    use_email: $("#email").val(),
+                    use_cpf: $("#cpf").val(),
+                    use_password: $("#password").val(),
+                    urg_gro_id: $("#acesso").val(),
+                };
+
+                // Converte o objeto para uma string JSON
+                var dadosJSON = JSON.stringify(dados);
+                // Envia a requisição AJAX usando jQuery
+                $.ajax({
+                    url: "/v1/api/cadastrar/usuarios",
+                    type: "POST", // Ou "GET" se for uma requisição GET
+                    headers: {
+                        authorization:
+                            "Bearer " + localStorage.getItem("token"),
+                    },
+                    data: dadosJSON,
+                    contentType: "application/json",
+                    success: function (response) {
+                        // Manipule a resposta do servidor aqui, caso seja necessário
+                        if (response.status == "success") {
+                            toast("Sucesso!", response.message, "success");
+                            setTimeout(() => {
+                                location.href = "/usuarios/listar";
+                            }, 1000);
+                        } else {
+                            toast("Erro!", response.message, "error");
+                        }
+                        $("#cadastrar")
+                            .attr("disabled", false)
+                            .html("Cadastrar");
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        // Manipule os erros da requisição aqui, caso ocorram
+                        applyErrorLoginAnimation(jqXHR.responseJSON.message);
+                    },
+                });
+            },
+        });
+        //multi select
+        $(document).ready(function () {
+            $("#acesso").select2();
+            $("#link").select2();
+        });
+    </script>
+</HTML>

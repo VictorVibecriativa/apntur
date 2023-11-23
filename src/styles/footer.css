@@ -1,0 +1,134 @@
+.bgFooter {
+    background-color: black;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footerTlt {
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.footerTxt {
+    font-size: 16px;
+    color: #BABABA;
+    margin-bottom: 23px;
+    font-weight: 400;
+    line-height: 28px;
+    transition: all 0.5s;
+}
+
+.navsFooter:hover {
+    color: #009DFF;
+}
+
+.copyTlt {
+    font-size: 16px;
+    color: #919191;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.bxCopyR {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid;
+}
+
+.lineButto {
+    color: #919191;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #919191;
+    transition: all 0.5s;
+}
+
+.border0px {
+    border-radius: 0px !important;
+}
+
+.lineButto:hover {
+    color: #009DFF;
+    border-bottom: 1px solid #009DFF;
+}
+
+.bntSubmitFooter {
+    background: #009DFF;
+    padding: 0px;
+    width: 120px;
+    color: white;
+}
+
+.inputnewsFOoter {
+    width: 250px;
+    border-radius: 0px !important;
+}
+
+.centroFLex {
+    display: flex;
+    justify-content: center;
+}
+
+.wpplink {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+    height: 50px;
+    padding: 0px 20px;
+    color: white;
+    border-radius: 20px 20px 0px 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline-style: none !important;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 22px;
+    animation: changeColor 1s infinite alternate;
+    /* Adicionando animação para mudar a cor */
+
+}
+
+@keyframes changeColor {
+    from {
+        background-color: #01e675;
+        /* Cor de fundo inicial */
+    }
+
+    to {
+        background-color: #01ac56;
+        /* Cor de fundo final */
+    }
+}
+
+
+@media (max-width: 992px) {
+    .dispGridMobi {
+        display: grid;
+    }
+
+    .inputnewsFOoter {
+        width: 180px;
+        border-radius: 0px !important;
+    }
+
+    .footerTlt {
+        margin-bottom: 15px;
+    }
+
+    .mt2Mobi {
+        margin-top: 2rem;
+    }
+}

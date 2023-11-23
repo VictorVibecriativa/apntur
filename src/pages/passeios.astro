@@ -1,0 +1,34 @@
+---
+import Ofertas from "@/components/content/ofertas.astro";
+import HTML from "@/pages/_base.astro";
+import "@/styles/passeios.css";
+import QuartosHome from "@/components/content/quartosHome.astro";
+import PasseiosP from "@/components/content/passeios.astro";
+import ReservaHome from "@/components/content/reservaHome.astro";
+import InstaHome from "@/components/content/instaHome.astro";
+---
+
+<HTML title="Passeios" description="">
+    <div class="bgHeader">
+        <h3
+            class="tltHeader animate__animated animate__fadeIn aniDurat txt_shadow"
+        >
+            Passeios com Aventura
+        </h3>
+    </div>
+
+    <!-- Ofertas -->
+    <Ofertas />
+
+    <!-- Quartos -->
+    <QuartosHome />
+
+    <!-- Ofertas -->
+    <PasseiosP />
+
+    <!-- Reserva Call -->
+    <ReservaHome />
+
+    <!-- Instagram -->
+    <InstaHome />
+</HTML>

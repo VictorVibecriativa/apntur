@@ -1,0 +1,167 @@
+---
+import "@/styles/servicos.css";
+import HTML from "@/pages/_base.astro";
+import Ofertas from "@/components/content/ofertas.astro";
+import QuartosHome from "@/components/content/quartosHome.astro";
+import InstaHome from "@/components/content/instaHome.astro";
+---
+
+<HTML title="Servico" description="">
+    <div class="bgHeader">
+        <h3
+            class="tltHeader txt_shadow animate__animated animate__fadeIn aniDurat txt_shadow"
+        >
+            Mergulho Rio do fogo
+        </h3>
+    </div>
+
+    <div class="container mtNegativo">
+        <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+        >
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="/public/imagens/servicos/3.png"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="/public/imagens/servicos/3.png"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="/public/imagens/servicos/3.png"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center m-5 VGeral">Visão Geral</h2>
+
+        <div class="row">
+            <div class="col-md-7">
+                <h3 class="tltPasseio">
+                    Pipa ( com praia do amor ) de Van ou micro ônibus
+                </h3>
+
+                <div class="mb-5">
+                    <h3 class="tltPasseio2">ROTEIRO DE PIPA (Saídas diária)</h3>
+                </div>
+
+                <div>
+                    <h3 class="tltPasseio2">PRIMEIRA PARADA:</h3>
+                    <p>
+                        Praia central onde ficaremos aproximadamente 3:00 horas
+                        livre.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="tltPasseio2 mt_3">Opcional</h3>
+                    <p>Passeio de Lancha R$60,00.</p>
+                </div>
+
+                <div>
+                    <h3 class="tltPasseio2 mt_3">SEGUNDA PARADA:</h3>
+                    <p>
+                        Praia do AMOR, onde paramos para almoçar e desfrutar de
+                        um cenário paradisíaco na praia mais cobiçada em todo
+                        complexo de pipa, tempo de parada de aproximadamente
+                        2:30 horas
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="tltPasseio2 mt_3">TERCEIRA PARADA:</h3>
+                    <p>
+                        Praia do Madeiro! Após o almoço finalizamos nosso dia
+                        com Chave de Ouro na Praia do Madeiro! (Baía dos
+                        Golfinhos) parada para banho e lindas fotos, com um
+                        visual deslumbrante onde a natureza nos oferece
+                        Falésias, Mata Atlântica e o Mar.
+                    </p>
+                    <p class="mt-2">
+                        Esse é o melhor e mais completo passeio de Natal! São
+                        7/8h de estonteantes belezas naturais e o melhor: com
+                        tempo para desfrutar de tudo com tranquilidade.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="tltPasseio2 mt_3">
+                        Itens inclusos no valor do Passeio.
+                    </h3>
+                    <ul>
+                        <li class="list">Barracas e Banheiros</li>
+                        <li class="list">Seguro</li>
+                        <li class="list">Guia de turismo credenciada</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="tltPasseio2 mt_3">Característica de Pipa</h3>
+                    <ul>
+                        <li class="list">Região de falésias</li>
+                        <li class="list">85 km de Natal</li>
+                        <li class="list">Parte de mata atlântica preservada</li>
+                        <li class="list">
+                            Já foi considerada entre as 10 praias mais bonitas
+                            do Brasil
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col container">
+                <h3 class="tltPasseio0">Valor do passeio</h3>
+                <p class="mt-2 preco">R$ 80,00 Por pessoa</p>
+                <a
+                    href="https://web.whatsapp.com/send?phone=5584988988779&text=+Olá"
+                >
+                    <button class="bttReservaPasseio"> Reservar agora</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ofertas -->
+    <Ofertas />
+
+    <!-- Quartos -->
+    <QuartosHome />
+
+    <!-- Instagram -->
+    <InstaHome />
+</HTML>

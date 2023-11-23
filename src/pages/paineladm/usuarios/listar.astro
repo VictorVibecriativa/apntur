@@ -1,0 +1,116 @@
+---
+import HTML from "../../../pages/paineladm/_base.astro";
+---
+
+<HTML title="Início" description="">
+    <title></title>
+    <div class="container p-4">
+    
+        <table class="table mt-3">
+            <thead class="thead-dark newBG">
+                <tr class="">
+                    <th scope="col">Id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Permissão</th>
+                    <th scope="col">Ativo</th>
+                    <th scope="col">Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="" class="DOM">
+                    <th scope="row">1</th>
+                    <td>victor</td>
+                    <td>
+                        <div class="btn-group-vertical">Victor@Vibecriativa.com.br</div>
+                    </td>
+                    <td>
+                        <div class="btn-group-vertical">1</div>
+                    </td>
+                    <td>
+                        <div class="d-flex">
+                            <input value="on" type="checkbox" id="{{item.use_id}}" checked data-toggle="toggle"
+                                data-on="Ativado" data-onstyle="success" data-off="Desativado" data-offstyle="danger"
+                                data-size="sm" onchange="ativofunc({{item .use_id}})" >
+                            <input value="off" type="checkbox" id="{{item.use_id}}" data-toggle="toggle" data-on="Ativado"
+                                data-onstyle="success" data-off="Desativado" data-offstyle="danger" data-size="sm"
+                                onchange="ativofunc({{item .use_id}})" >
+                        </div>
+                    </td>
+                    <td>
+                        <a class="btn btn-primary" href="/usuarios/{{item.use_id}}" role="button"><i
+                                class="fa-solid fa-pen-to-square"></i></a>
+    
+                        <button type="button" class="btn btn-danger" onclick="excluir({{item .use_id}})" ><i
+                                class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    
+    
+    </div>
+    <script>
+        sendajax = function (data, status) {
+            $.ajax({
+                url: '/v1/api/editar/usuarios/desativar',
+                type: 'PUT',
+                dataType: 'json',
+                data: {
+                    id: data,
+                    status: status
+                },
+                success: function (data) {
+                    //json decode
+                    if (data.status == 'success') {
+                        toast('sucesso!', 'status atualizado!', 'success');
+                    } else {
+                        toast('Error!', 'erro ao atualizar!', 'error');
+                    }
+                },
+                error: function (data) {
+                    console.log(data);
+                    toast('Error!', 'erro ao atualizar!', 'error');
+                }
+            });
+        }
+        //botao desativar/ativar
+        function ativofunc(data) {
+            //if value input
+            if ($("#" + data).val() == 'on') {
+                $("#" + data).val('off');
+                var status = '0';
+                //ajax update
+                sendajax(data, status);
+            } else {
+                $("#" + data).val('on');
+                var status = '1';
+                sendajax(data, status);
+            }
+        }
+        //remover slider/excluir
+        function excluir(post) {
+            $.ajax({
+                url: '/v1/api/editar/usuarios/deletar',
+                type: 'PUT',
+                dataType: 'json',
+                data: {
+                    id: post
+                },
+                success: function (data) {
+                    if (data.status == 'success') {
+                        $("#td" + post).remove();
+                        toast('Excluído!', 'Usuário Excluído!', 'success');
+                    } else {
+                        toast('Error!', 'erro ao excluir!', 'error');
+                    }
+                },
+                error: function (data) {
+                    console.log(data);
+                    toast('Error!', 'Erro ao excluir!', 'error');
+                }
+            });
+        }
+    
+    </script>
+</HTML>

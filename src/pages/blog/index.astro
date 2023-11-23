@@ -1,0 +1,35 @@
+---
+import { CardPost } from "@/components/blog_card";
+import { BlogPostsAndCategories } from "@/components/blog_posts_and_categories";
+import { Button } from "@/components/ui/button";
+import HTML from "@/pages/_base.astro";
+
+export interface postTypes {
+    title?: string;
+    slug?: string;
+    img?: {
+        url?: string;
+        alt?: string;
+    };
+    categories?: category[];
+    description?: string;
+    content?: string;
+}
+
+export interface category {
+    name: string;
+    slug: string;
+}
+
+const posts_response_api = await fetch("http://localhost:3000/api/blog/allposts.json");
+const posts: postTypes[] = await posts_response_api.json();
+
+const categories_response_api = await fetch(
+    "http://localhost:3000/api/blog/categories.json"
+);
+const categories: category[] = await categories_response_api.json();
+---
+
+<HTML title="Blog" description="">
+    <BlogPostsAndCategories posts={posts} categories={categories}/>
+</HTML>

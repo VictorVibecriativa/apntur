@@ -1,0 +1,78 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bgHeader {
+    background-image: url(/public/imagens/servicos/sol.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    background-repeat: no-repeat;
+    padding: 273px 0 176px 0;
+}
+
+.mtNegativo {
+    margin-top: -140px;
+}
+
+.tltHeader {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.VGeral {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.tltPasseio {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.tltPasseio2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.mt_3 {
+    margin-top: 3rem;
+}
+
+.list {
+    list-style-type: circle;
+    margin-left: 1.4rem;
+}
+
+.tltPasseio0 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.preco{
+    font-size: 18px;
+}
+
+.bttReservaPasseio{
+    background-color: #009DFF !important;
+    height: 40px;
+    border: solid 1px #009DFF;
+    color: white;
+    padding: 8px 25px;
+    margin-top: 1.5rem;
+}
+.bttReservaPasseio:hover{
+    background-color: #1100ff !important;
+    height: 40px;
+    border: solid 1px #1100ff;
+    color: white;
+    padding: 8px 25px;
+    margin-top: 1.5rem;
+    transition: all 0.5s;
+}

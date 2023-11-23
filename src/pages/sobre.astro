@@ -1,0 +1,59 @@
+---
+import { Header } from "@/components/home_header";
+import HTML from "@/pages/_base.astro";
+import "@/styles/sobre.css";
+import SobreContent from "@/components/content/sobre.astro";
+import ReservaHome from "@/components/content/reservaHome.astro";
+import InstaHome from "@/components/content/instaHome.astro";
+import SlideSobre from "@/components/content/slideSobre.astro";
+import RestauranteSobre from "@/components/content/restauranteSobre.astro";
+---
+
+<HTML title="Sobre" description="">
+    <div class="bgHeader">
+        <h3 class="tltHeader txt_shadow  animate__animated animate__fadeIn aniDurat txt_shadow">AP&N Turismo</h3>
+    </div>
+
+    <!-- Sobre -->
+    <div class="container mt_8">
+        <div class="row GridMob">
+            <div class="col">
+                <span class="section_home">Sobre nós</span>
+                <h1 class="tlt-sobre_home">
+                    Explore o Mundo com Aventura e Conforto!
+                </h1>
+                <p class="subtlt-sobre_home">
+                    Bem-vindo à Ap&N Turismo, sua porta de entrada para
+                    experiências incríveis no mundo! Estamos aqui para
+                    transformar sua viagem em uma jornada inesquecível, onde
+                    cada passeio se torna uma história e cada aventura é marcada
+                    por momentos emocionantes! Nossos passeios oferecem emoção,
+                    segurança e um compromisso inabalável com o seu conforto.
+                </p>
+            </div>
+
+            <div class="col">
+                <div class="flex">
+                    <div class="m-2">
+                        <img src="/public/imagens/inicio/sobre1.png" alt="" />
+                    </div>
+                    <div class="mt-10">
+                        <img src="/public/imagens/inicio/sobre2.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide -->
+    <SlideSobre />
+
+    <!-- Restaurante Sobre -->
+    <RestauranteSobre />
+
+    <!-- Reserva Call -->
+    <ReservaHome />
+
+    <!-- Instagram -->
+    <InstaHome />
+</HTML>

@@ -1,0 +1,123 @@
+---
+import HTML from "../../../pages/paineladm/_base.astro";
+---
+
+<HTML title="Início" description="">
+    <div class="container p-4">
+        <div>
+            <header class="container headerAdm">
+                <h4><i class="fas fa-edit pr-2"></i>Cadastrar Notícia</h4>
+            </header>
+        </div>
+
+        <form class="formCaix" id="formnoticia" autocomplete="off">
+            <div class="p-3">
+                <div class="form-group">
+                    <label for="titulo" class="fontFormTl"
+                        >Título da notícia</label
+                    >
+                    <input
+                        name="titulo"
+                        type="text"
+                        class="form-control"
+                        id="titulo"
+                        placeholder="Título"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="autor" class="fontFormTl"
+                        >Autor da notícia</label
+                    >
+                    <input
+                        name="autor"
+                        type="text"
+                        class="form-control"
+                        id="autor"
+                        placeholder="Autor"
+                    />
+                </div>
+
+                <textarea name="" class="w-100" id="" cols="20" rows="5"></textarea>
+
+                <div class="form-group mt-4">
+                    <label for="titulo" class="fontFormTl"
+                        >Carregar imagem da notícia</label
+                    >
+                    <div
+                        class="card-body d-flex justify-content-center boxcarrgimg"
+                    >
+                        <!--preview img-->
+                        <div
+                            id="preview"
+                            style="width: 20rem !important; height: 10rem !important"
+                        >
+                        </div>
+                    </div>
+                    <br />
+                    <div class="custom-file">
+                        <input
+                            name="image"
+                            type="file"
+                            accept="image/*"
+                            class="custom-file-input"
+                            id="imgupload"
+                            accept="image/*"
+                            lang="pt"
+                        />
+                        <label class="custom-file-label" for="imgupload"
+                            >Selecione o arquivo</label
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1" class="fontFormTl"
+                        >Selecione a categoria</label
+                    >
+                    <style>
+                        .select2-selection__choice__remove {
+                            background-color: red !important;
+                            color: white !important;
+                            width: 1.5rem !important;
+                        }
+
+                        .select2-selection__choice__display {
+                            background-color: white !important;
+                            color: black !important;
+                        }
+                    </style>
+                    <select
+                        name="categoria[]"
+                        multiple="multiple"
+                        class="form-control"
+                        id="selectCategoria"
+                    >
+                        <option value="1"></option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="titulo" class="fontFormTl"
+                        >Data da publicação</label
+                    >
+                    <input name="data" id="datepicker" />
+                </div>
+                <div class="form-group">
+                    <label for="titulo" class="fontFormTl">Ativar noticia</label
+                    >
+                    <br />
+                    <div class="">
+                        <input name="ativo" type="checkbox" id="ativo" />
+                        <button
+                            id="cadastrar"
+                            type="button"
+                            class="btn btn-primary btn-lg btn-block"
+                            >Cadastrar</button
+                        >
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</HTML>

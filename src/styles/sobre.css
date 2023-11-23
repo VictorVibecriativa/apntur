@@ -1,0 +1,57 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bgHeader {
+    background-image: url(../../public/imagens/sobre/1.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    background-repeat: no-repeat;
+    padding: 273px 0 176px 0;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 14rem !important;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+.tltHeader {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.iconseta {
+    transition: all 0.5s;
+}
+
+.iconseta:hover {
+    background-color: #007bff !important;
+}
+
+.tltRestSobre {
+    font-weight: 500;
+    font-size: 22px;
+    color: #1F1F1F;
+    margin-bottom: 0;
+    margin-bottom: 10px;
+    line-height: 32px;
+}
+
+.subtltRestSobre {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #4D4D4D;
+}

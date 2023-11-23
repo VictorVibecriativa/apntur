@@ -1,0 +1,105 @@
+---
+import "@/styles/servicos.css";
+import HTML from "@/pages/_base.astro";
+import Ofertas from "@/components/content/ofertas.astro";
+import QuartosHome from "@/components/content/quartosHome.astro";
+import InstaHome from "@/components/content/instaHome.astro";
+---
+
+<HTML title="Servico" description="">
+    <div class="bgHeader">
+        <h3
+            class="tltHeader txt_shadow animate__animated animate__fadeIn aniDurat txt_shadow"
+        >
+            Pipa Night
+        </h3>
+    </div>
+
+    <div class="container mtNegativo">
+        <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+        >
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="/public/imagens/servicos/5.png"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="/public/imagens/servicos/5.png"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="/public/imagens/servicos/5.png"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center m-5 VGeral">Visão Geral</h2>
+
+        <div class="row">
+            <div class="col-md-7">
+                <h3 class="tltPasseio">Pipa Night ( van ou micro-ônibus )</h3>
+
+                <div class="mb-5">
+                    <h3 class="tltPasseio2">
+                        Conheça a noite de Pipa em um bate e volta. Uma das noites
+                        mais badaladas do Rio Grande do Norte.
+                    </h3>
+                </div>
+            </div>
+
+            <div class="col container">
+                <h3 class="tltPasseio0">Valor do passeio</h3>
+                <p class="mt-2 preco">R$ 70,00 Por pessoa</p>
+                <a
+                    href="https://web.whatsapp.com/send?phone=5584988988779&text=+Olá"
+                >
+                    <button class="bttReservaPasseio"> Reservar agora</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ofertas -->
+    <Ofertas />
+
+    <!-- Quartos -->
+    <QuartosHome />
+
+    <!-- Instagram -->
+    <InstaHome />
+</HTML>

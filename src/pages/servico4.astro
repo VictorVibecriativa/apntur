@@ -1,0 +1,133 @@
+---
+import "@/styles/servicos.css";
+import HTML from "@/pages/_base.astro";
+import Ofertas from "@/components/content/ofertas.astro";
+import QuartosHome from "@/components/content/quartosHome.astro";
+import InstaHome from "@/components/content/instaHome.astro";
+---
+
+<HTML title="Servico" description="">
+    <div class="bgHeader">
+        <h3
+            class="tltHeader txt_shadow animate__animated animate__fadeIn aniDurat txt_shadow"
+        >
+            Mergulho nos parrachos de Maracajaú
+        </h3>
+    </div>
+
+    <div class="container mtNegativo">
+        <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+        >
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="/public/imagens/servicos/4.png"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="/public/imagens/servicos/4.png"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="/public/imagens/servicos/4.png"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center m-5 VGeral">Visão Geral</h2>
+
+        <div class="row">
+            <div class="col-md-7">
+                <h3 class="tltPasseio">Pipa Night ( van ou micro-ônibus )</h3>
+
+                <div class="mb-5">
+                    <h3 class="tltPasseio2">ROTEIRO</h3>
+                    <p>
+                        Desfrute conosco de passeios de barco aos corais de
+                        Maracajaú com dura-ção de 2:30hrs sendo 30min.de trajeto
+                        até alcançar uma plataforma exclusivada empresa com
+                        capacidade para até 180 pessoas.
+                    </p>
+
+                    <p class="mt-2">
+                        a plataforma sua perma-nência será de aproximadamente
+                        1:30Hs e você encontrará a sua disposição serviço de
+                        bordo de espetinho e bebidas sendo esta consumação pago
+                        a parte.
+                    </p>
+                    <p class="mt-2">
+                        Este tempo de permanência você poderá desfrutar
+                        realizando o mergulhode snorkel convencional que é
+                        oferecido gratuitamente e optar também emrealizar os
+                        opcionais (pagos a parte) cilindro, máscara top e Sea
+                        Bob uma máqui-na turbo jet para você brincar na
+                        superfície ou emergindo na água, sendo esteUma
+                        exclusividade Parrachos Praia Clube.
+                    </p>
+                    <p class="mt-2">
+                        Ao finalizar seu tempo em plataformavocê retornará 30min
+                        de volta até nosso restaurante em terra.
+                    </p>
+
+                    <div>
+                        <h3 class="tltPasseio2 mt_3">Opcional</h3>
+                        <p>Buggy e quadriciclo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col container">
+                <h3 class="tltPasseio0">Valor do passeio</h3>
+                <p class="mt-2 preco">R$ 184,00 Por pessoa</p>
+                <a
+                    href="https://web.whatsapp.com/send?phone=5584988988779&text=+Olá"
+                >
+                    <button class="bttReservaPasseio"> Reservar agora</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ofertas -->
+    <Ofertas />
+
+    <!-- Quartos -->
+    <QuartosHome />
+
+    <!-- Instagram -->
+    <InstaHome />
+</HTML>

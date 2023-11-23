@@ -1,0 +1,46 @@
+---
+import HTML from "@/pages/_base.astro";
+import "@/styles/blog.css";
+import NoticiasBlog from "@/components/content/noticiasBlog.astro";
+import PesquisaBlog from "@/components/content/pesquisaBlog.astro";
+import CategoriaBlog from "@/components/content/categoriaBlog.astro";
+import RecentPost from "@/components/content/recentPost.astro";
+import SubCategoria from "@/components/content/subCategoria.astro";
+import Feedsinsta from "@/components/content/feedsinsta.astro";
+import Newsletter from "@/components/content/newsletter.astro";
+---
+
+<HTML title="Base Project" description="">
+    <div class="bgHeader">
+        <h3 class="tltHeader">Blog</h3>
+    </div>
+
+    <div class="container sectbxBlog">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Noticicas -->
+                <NoticiasBlog />
+            </div>
+
+            <div class="col-md-4">
+                <!-- Search -->
+                <PesquisaBlog />
+
+                <!-- Categoria -->
+                <CategoriaBlog />
+
+                <!-- Recent Post -->
+                <RecentPost />
+
+                <!-- Sub Categoria -->
+                <SubCategoria />
+
+                <!-- Feeds Istagram -->
+                <Feedsinsta />
+
+                <!-- Newsletter -->
+                <Newsletter />
+            </div>
+        </div>
+    </div>
+</HTML>

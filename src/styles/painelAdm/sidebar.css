@@ -1,0 +1,44 @@
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #ffffff33;
+}
+
+.imgUser {
+    width: 38px !important;
+    height: 38px !important;
+}
+
+.itemMenu {
+    border-radius: 1px !important;
+    color: white !important;
+}
+
+.bNone {
+    border: none !important;
+    border-radius: 1px !important;
+}
+
+.branca {
+    color: white !important;
+}
+
+.sidebarColor {
+    background-color: #105163;
+}
+
+.dropSid {
+    color: #b0bdb9;
+}
+
+.boxItemS:hover {
+    background-color: rgba(233, 233, 233, 0.274);
+}
+
+.dropSid:hover {
+    color: #fff;
+}
+
+.branca {
+    color: white !important;
+}

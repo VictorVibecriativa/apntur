@@ -1,0 +1,9 @@
+export function Aborigena() {
+    return (
+        <>
+
+        </>
+    )
+}
+
+

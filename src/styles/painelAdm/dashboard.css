@@ -1,0 +1,136 @@
+.dashboard_box {
+    padding: 1rem;
+    width: 255px;
+    justify-content: space-between;
+    border-radius: 3px;
+    height: 150px;
+    margin: 3px;
+}
+
+.dashboard_box i {
+    transition: all 0.5s ease-in-out;
+}
+
+.dashboard_box:hover i {
+    transform: scale(1.2);
+    color: #fff !important;
+}
+
+.pedidosProducao {
+    background-color: #10758a;
+}
+
+.PedidosAprovados {
+    background-color: #1a7c46;
+}
+
+.pedidosProdução {
+    background-color: #ffc107;
+}
+
+.registroUser {
+    background-color: #ffc107 !important;
+}
+
+.pedidoOcorrencia {
+    background-color: #ce3f35 !important;
+}
+
+#pedidos {
+    justify-content: flex-start;
+}
+
+.qtdPedidos {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.iconPedidos {
+    font-size: 50px;
+    color: rgb(255 255 255 / 30%);
+}
+
+.pedidosP {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#tabela {
+    width: 100%;
+}
+
+.alingitencscentr {
+    align-items: center;
+    justify-content: end !important;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 400 !important;
+}
+
+input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.inputmodl:focus {
+    outline: solid 1px #0d6efd;
+}
+
+.inputmodl:active {
+    outline: solid 1px#0d6efd;
+}
+
+.inputmodl:focus {
+    outline: solid 1px #0d6efd;
+}
+
+.inputmodl:active {
+    outline: solid 1px#0d6efd;
+}
+
+.inputmodl:hover {
+    border: solid 1px #2377f5;
+}
+
+.inputmodl {
+    height: 39px;
+    border: solid 1px #d4d4d4;
+    font-size: 17px;
+}
+
+/* Font */
+.branco {
+    color: white !important;
+}
+
+.iconPedidos {
+    color: #ffffff7a !important;
+}
+
+.flexWrapDesk {
+    flex-wrap: wrap;
+}
+
+
+
+
+
+@media (max-width: 992px) {
+    #pedidos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dashboard_box {
+        padding: 1rem;
+        width: 100%;
+        justify-content: space-between;
+        border-radius: 3px;
+        height: 150px;
+        margin: 3px;
+    }
+}

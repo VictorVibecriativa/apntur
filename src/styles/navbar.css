@@ -1,0 +1,100 @@
+.navbars {
+    z-index: 1000;
+    background-color: #00000033;
+}
+
+.focus\:bg-accent:focus {
+    background-color: red !important;
+}
+
+.menuItem.menuActive::before {
+    width: 100%;
+}
+
+.menuItem {
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 0px !important;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    min-height: 50px;
+}
+
+
+
+.menuItem::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.menuItem:hover::before {
+    width: 100%;
+}
+
+.menuItem:hover {
+    color: #fff !important;
+}
+
+.btnReservaNav {
+    border-radius: 0px;
+    font-weight: 400;
+    background: #009DFF !important;
+    height: 40px;
+    border: solid 1px #009DFF;
+    transition: all 0.3s;
+}
+
+.btnReservaNav:hover {
+    background-color: #fff !important;
+    color: #009DFF;
+    border: solid 1px #fff;
+    transition: all 0.5s;
+}
+
+.iconsMidias {
+    color: #fff;
+}
+
+.iconsMidias:hover {
+    color: #fff !important;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 991px) {
+
+    img,
+    svg {
+        color: black;
+    }
+
+    .menuItem {
+        background-color: transparent;
+        color: #000;
+    }
+
+    img,
+    svg {
+        color: white;
+    }
+
+    .bgNavMob {
+        margin-top: 70px;
+        padding: 1rem;
+        background-color: #00000033 !important;
+        color: #fff !important;
+    }
+}

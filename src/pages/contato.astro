@@ -1,0 +1,93 @@
+---
+import InstaHome from "@/components/content/instaHome.astro";
+import Ofertas from "@/components/content/ofertas.astro";
+import QuartosHome from "@/components/content/quartosHome.astro";
+import HTML from "@/pages/_base.astro";
+import "@/styles/contato.css";
+---
+
+<HTML title="Contato" description="Envie sua mensagem">
+    <div class="bgHeader">
+        <h3 class="tltHeader txt_shadow animate__animated animate__fadeIn aniDurat txt_shadow">Contato</h3>
+    </div>
+
+    <div class="aquiCOnt">
+        <div class="contCont d-flex mobajus mtNeg_5 bgWite">
+            <div class="container pt-4">
+                <div class="boxsombra">
+                    <header class="caixHead">
+                        <i
+                            class="fa-solid fas fa-envelope msmicon"
+                            style="color: #ffffff;"></i>
+                    </header>
+                    <div class="container pb1rem">
+                        <h4 class="pt-3 txtContato">Email</h4>
+                        <p style="padding-bottom: 23px;">
+                            Niltcamilo@gmail.com
+                        </p>
+                        <a target="_blank" href="mailto:Niltcamilo@gmail.com">
+                            <button class="linkB"> Enviar uma mensagem</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container pt-4">
+                <div class="boxsombra">
+                    <header class="caixHead">
+                        <i class="fa-solid fa-phone-volume msmicon"></i>
+                    </header>
+                    <div class="container pb1rem">
+                        <h4 class="pt-3 txtContato">Telefone</h4>
+
+                        <p>
+                            +55 84 9803-9314<br />
+                            <a
+                                class="black"
+                                target="_blank"
+                                href="https://web.whatsapp.com/send?phone=5584988988779&text=+Oii"
+                            >
+                                Whatsapp: +55 (84) 98898-8779
+                            </a>
+                        </p>
+
+                        <a
+                            target="_blank"
+                            href="https://web.whatsapp.com/send?phone=5584988988779&text=+Oii"
+                        >
+                            <button class="linkB">Enviar uma mensagem</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container pt-4">
+                <div class="boxsombra">
+                    <header class="caixHead">
+                        <i class="fa-sharp fa-solid fa-location-dot msmicon"
+                        ></i>
+                    </header>
+                    <div class="container pb1rem">
+                        <h4 class="pt-3 txtContato">Instagram</h4>
+                        <p style="padding-bottom: 22px;">@apn_tur</p>
+                        <a
+                            target="_blank"
+                            href="https://www.instagram.com/apn_tur/"
+                        >
+                            <button class="linkB">Seguir nosso Instagram</button></a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ofertas -->
+    <Ofertas />
+
+    <!-- Quartos -->
+    <QuartosHome />
+
+    <!-- Instagram -->
+    <InstaHome />
+</HTML>

@@ -1,0 +1,162 @@
+---
+import HTML from "@/pages/paineladm/_base.astro";
+import "@/styles/painelAdm/dashboard.css";
+---
+
+<HTML title="Início" description="">
+    <section class="content container p-4">
+        <div>
+            <header class="container headerAdm">
+                <h4><i class="fa-solid fa-chart-line pr-2"></i>Dashboard</h4>
+            </header>
+        </div>
+
+        <div class="d-flex alingitencscentr mt-4">
+            <div class="m-2">
+                <label for="dataEntrada">Início:</label>
+                <input
+                    class="inputmodl"
+                    type="date"
+                    id="dataEntrada"
+                    name="dataEntrada"
+                />
+            </div>
+
+            <div class="m-2">
+                <label for="dataSaida">Fim:</label>
+                <input
+                    class="inputmodl"
+                    type="date"
+                    id="dataSaida"
+                    name="dataSaida"
+                />
+            </div>
+        </div>
+
+        <div id="pedidos" class="d-flex flexWrapDesk">
+            <div class="dashboard_box pedidosProducao mt-4">
+                <div class="d-flex justify-content-between">
+                    <h3 class="qtdPedidos branca">1</h3>
+                    <i class="fas fa-star iconPedidos"></i>
+                </div>
+
+                <div class="branco">
+                    <p style="padding-top: 20px;" class="font19 branca">Novo</p>
+                </div>
+            </div>
+
+            <div class="dashboard_box pedidosProducao mt-4">
+                <div class="d-flex justify-content-between">
+                    <h3 class="qtdPedidos branca">23</h3>
+                    <i class="fa-solid fa-square-check iconPedidos"></i>
+                </div>
+
+                <div class="branco">
+                    <p style="padding-top: 20px;" class="font19 branca">
+                        Aprovados pelo regional
+                    </p>
+                </div>
+            </div>
+
+            <div class="dashboard_box registroUser mt-4">
+                <div class="d-flex justify-content-between">
+                    <h3 class="qtdPedidos branca">2</h3>
+                    <i class="fas fa-cogs iconPedidos"></i>
+                </div>
+
+                <div class="branco">
+                    <p style="padding-top: 20px;" class="font19 branca">
+                        Em produção
+                    </p>
+                </div>
+            </div>
+
+            <div class="dashboard_box registroUser mt-4">
+                <div class="d-flex justify-content-between">
+                    <h3 class="qtdPedidos branca">33</h3>
+                    <i class="fas fa-shipping-fast iconPedidos"></i>
+                </div>
+
+                <div class="branco">
+                    <p style="padding-top: 20px;" class="font19 branca">
+                        Em transporte
+                    </p>
+                </div>
+            </div>
+
+            <div class="dashboard_box PedidosAprovados mt-4">
+                <div class="d-flex justify-content-between">
+                    <h3 class="qtdPedidos branca">1</h3>
+                    <i class="fas fa-check-double iconPedidos"></i>
+                </div>
+
+                <div class="branco">
+                    <p style="padding-top: 20px;" class="font19 branca">
+                        Entregues
+                    </p>
+                </div>
+            </div>
+
+            <div class="dashboard_box PedidosAprovados mt-4">
+                <div class="d-flex justify-content-between">
+                    <h3 class="qtdPedidos branca">3</h3>
+                    <i class="fas fa-check-circle iconPedidos"></i>
+                </div>
+
+                <div class="branco">
+                    <p style="padding-top: 20px;" class="font19 branca">
+                        Finalizados
+                    </p>
+                </div>
+            </div>
+
+            <div class="dashboard_box pedidoOcorrencia mt-4">
+                <div class="d-flex justify-content-between">
+                    <h3 class="qtdPedidos branca">2</h3>
+                    <i class="fas fa-exclamation-circle iconPedidos"></i>
+                </div>
+
+                <div class="branco">
+                    <p style="padding-top: 20px;" class="font19 branca">
+                        Finalizados com ocorrência
+                    </p>
+                </div>
+            </div>
+
+            <div class="dashboard_box pedidoOcorrencia mt-4">
+                <div class="d-flex justify-content-between">
+                    <h3 class="qtdPedidos branca">12</h3>
+                    <i class="fas fa-exclamation-triangle iconPedidos"></i>
+                </div>
+
+                <div class="branco">
+                    <p style="padding-top: 20px;" class="font19 branca">
+                        Em ocorrências
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <table class="table mt-4">
+            <thead class="thead-dark">
+                <tr class="">
+                    <th scope="col">N Pedidos</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr id="td{{item.req_id}}" class="DOM">
+                    <td scope="row"> </td>
+                    <td>
+                        <div class="btn-group-vertical"></div>
+                    </td>
+                    <td>
+                        <div class="btn-group-vertical"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</HTML>

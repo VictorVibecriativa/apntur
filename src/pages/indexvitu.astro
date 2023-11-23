@@ -1,0 +1,135 @@
+---
+import HTML from "@/pages/_base.astro";
+---
+
+<style>
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .comp {
+        background: linear-gradient(90deg, #ed6292 25%, #ed5760 87.5%);
+        border-radius: 5px;
+        color: #fff;
+        padding: 1px 8px;
+        font-weight: bold;
+    }
+    .boxHelps {
+        display: flex;
+        grid-gap: 1rem;
+        padding: 1rem;
+        background-color: #fafafa;
+        border: 2px solid #eaeaea;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+
+    .bntDefault {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 2px solid #3498db;
+        background-color: #ffffff;
+        color: #3498db;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+
+    .bntDefault:hover {
+        background-color: #3498db;
+        color: #ffffff;
+    }
+
+    .bt-white {
+        background-color: #fff;
+        color: var(--color-title-default);
+        box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+        border-color: #fff;
+        width: 170px;
+    }
+
+    .bt-white:hover {
+        background-color: var(--color-title-default);
+        color: #1d1d1d;
+        box-shadow: 0 8px 20px 0 rgb(0 0 0 / 20%);
+        border-color: var(--color-title-default);
+    }
+
+    .bt-border:hover {
+        background-color: #2980b9;
+        color: #fff;
+        border-color: transparent;
+    }
+
+    button {
+        height: 50px;
+        padding: 0px 30px;
+        max-width: 100%;
+        border: 1px solid var(--color-primary);
+        border-radius: var(--border-radius-default);
+        color: #ffffff;
+        transition: 0.3s ease;
+        white-space: nowrap;
+        width: 170px;
+        transition: all 0.5s;
+    }
+</style>
+
+<HTML title="Base" description="">
+    <div class="pt-28 container flex justify-center min-h-screen">
+        <div class="text-center">
+            <h1 class="text-4xl font-semibold">
+                Modelo de Website Institucional Vibecriativa
+            </h1>
+
+            <h1 class="text-4xl mt-4 font-semibold text-[#0d6efd]">
+                Vibecriativa
+            </h1>
+
+            <p class="mt-9">
+                Nesse modelo você poderá obter componentes estilizados e
+                funcionalidades já <br /> pré-implementadas para utilização, facilitanto
+                o seu trabalho...
+            </p>
+
+            <div class="listNone boxHelps flex justify-between mt-9">
+                <span class="comp">Components</span>
+
+                <a
+                    class="listNone hover:text-blue-600"
+                    href="politicaPrivacidade.html"
+                    >Política de Privacidade
+                </a>
+
+                <a
+                    class="listNone hover:text-blue-600"
+                    href="js/cookies.js"
+                    id="cookies"
+                    >Modal Cookies
+                </a>
+
+                <a class="listNone hover:text-blue-600" href=""
+                    >Página de Desenvolvimento</a
+                >
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-28 flex justify-around">
+                <button class="bntDefault">Botão padrão</button>
+                <button class="bt-white">Botão padrão</button>
+                <button class="bt-border">Botão padrão</button>
+            </div>
+             <!-- Buttons -->
+
+            <div class="flex justify-center mt-16">
+                <h1 class="m-5 text-4xl font-bold">H1</h1>
+                <h2 class="m-5 text-3xl font-semibold">H2</h2>
+                <h3 class="m-5 text-2xl font-medium">H3</h3>
+                <h4 class="m-5 text-1xl font-normal">H4</h4>
+            </div>
+        </div>
+    </div>
+</HTML>

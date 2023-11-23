@@ -1,0 +1,94 @@
+---
+import HTML from "../../../pages/paineladm/_base.astro";
+---
+
+<HTML title="Início" description="">
+    <div class="p-4">
+        <div>
+            <header class="container headerAdm">
+                <h4><i class="fa-solid fa-user pr-2"></i>Cadastrar usuario</h4>
+            </header>
+        </div>
+
+        <div class="card mt-4">
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">ativo</th>
+                        <th scope="col">excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="td{{item.noc_id}}">
+                        <td class="col-sm-12 col-md-8"></td>
+                        <td class="col-sm-12 col-md-2">
+                            <input
+                                value="on"
+                                type="checkbox"
+                                id="{{item.noc_id}}"
+                                checked
+                                data-toggle="toggle"
+                                data-on="ativado"
+                                data-onstyle="success"
+                                data-off="desativado"
+                                data-offstyle="danger"
+                                data-size="sm"
+                            />
+                            <input
+                                value="off"
+                                type="checkbox"
+                                id="{{item.noc_id}}"
+                                data-toggle="toggle"
+                                data-on="ativado"
+                                data-onstyle="success"
+                                data-off="desativado"
+                                data-offstyle="danger"
+                                data-size="sm"
+                                "
+                            />
+                        </td>
+
+                        <td class="">
+                            <a
+                                href=""
+                                id="{{item.cat_id}}"
+                                onclick="e
+                                 uir({{i     tem.noc_id}     })"
+
+                            >
+                                <button class="bg-danger bntExc"
+                                    ><i class="fas fa-solid fa-trash"
+                                    ></i></button
+                                >
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <style>
+        .fontFormTl {
+            font-size: 1.3rem;
+            font-weight: 500 !important;
+        }
+
+        .tlFormadc {
+            background-color: #007bff;
+            color: white !important;
+            padding: 10px;
+            padding-left: 1rem;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        .bntExc {
+            height: 31px;
+            border: none;
+            width: 30px;
+        }
+    </style>
+    <!-- css -->
+</HTML>
